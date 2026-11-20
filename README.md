@@ -12,3 +12,6 @@ state until this service replaces it.
 
 Decision records: `identity-session-credential-2026-10-25` and `stratum-per-tenant-2026-10-25`
 (schematic roadmap). Work arrives as issues; see github.com/tacplus-dev/looper.
+
+The build is pinned: `build.lock` names the build image by digest, in which the gates (`just gates`) run as build
+jobs, without Docker. Moving it to a new digest is a change like any other, landed on the full gates.
