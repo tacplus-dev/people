@@ -11,5 +11,8 @@ the looper then marks it `promoted` or `declined` here with the date.
   (tacplus-dev/kernel#2, tacplus-dev/tacplus#206); the people tenant stays, as where Scotty and personal services
   run. The platform ROADMAP.md already says so. Rewrite this repository's ROADMAP.md to match (at Jody's request).
   Related: #2 (the release) still carries `Blocked-by: #1`, now closed; it also waits on tacplus-dev/looper#17.
+- **build.lock's comment names no build** (2026-11-27, #7): each nightly relock (#6, #7) moves `build_image`
+  but leaves the comment naming the build it replaced, so every relock needs a follow-up commit. Word the comment
+  as "the 2.6 line's newest build, by digest" without the build's tag, or have the looper's relock rewrite it.
 
 ## Promoted / declined
